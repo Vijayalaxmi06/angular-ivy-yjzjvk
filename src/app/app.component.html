@@ -1,0 +1,53 @@
+
+<div class="container">
+  <div class="sidebar"></div>
+  <div class="home"></div>
+</div>
+<div class="footer">
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>Manufacturing Analytics and Insights</h3>
+    </div>
+    <div class="col-sm-6 float-right">
+      <ul class="list-group list-group-horizontal">
+    <li class="list-group-item" style="border: none">
+      <h6>Welcome</h6>
+         <ul class="nav nav-tabs">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">{{Username}}</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item "  href="#">Link 1</a>
+              <a class="dropdown-item" href="#">Link 2</a>
+              <a class="dropdown-item" href="#">Link 3</a></div>
+          </li>
+        </ul>
+    </li>
+    <li class="list-group-item" style="border: none"><i class="fa fa-bell-o" aria-hidden="true"></i><sup>{{alertcount}}</sup></li>
+    <li class="list-group-item" style="border: none"></li><img src="">
+  </ul>
+    </div>
+  </div>
+  <span class="greenline"></span>
+  <span class="yellowline"></span>
+  <div class="row">
+    <div class="">  
+      <div class="" style="width:70px">
+         <a href="#" ><i class="fa fa-home"></i></a> 
+      </div>
+    </div>
+    <div class="">
+    <ul class="nav nav-tabs">
+    <li class="nav-item dropdown" *ngFor="let item of menu">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">{{item.name}}</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item "  href="#">Link 1</a>
+        <a class="dropdown-item" href="#">Link 2</a>
+        <a class="dropdown-item" href="#">Link 3</a></div>
+    </li>
+  </ul>
+    </div>
+  </div>
+</div>
