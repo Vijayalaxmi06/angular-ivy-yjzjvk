@@ -1,23 +1,17 @@
 
-<div class="container">
-  <div class="sidebar"></div>
-  <div class="home"></div>
-</div>
-<div class="footer">
-</div>
-
-<div class="container">
+<div class="Page-container">
   <div class="row">
     <div class="col-sm-6">
       <h3>Manufacturing Analytics and Insights</h3>
     </div>
-    <div class="col-sm-6 float-right">
+    <div class="col-sm-6 ">
+      <div class="float-right">
       <ul class="list-group list-group-horizontal">
     <li class="list-group-item" style="border: none">
       <h6>Welcome</h6>
-         <ul class="nav nav-tabs">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">{{Username}}</a>
+         <ul class="nav user">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{Username}}</a>
             <div class="dropdown-menu">
               <a class="dropdown-item "  href="#">Link 1</a>
               <a class="dropdown-item" href="#">Link 2</a>
@@ -25,29 +19,43 @@
           </li>
         </ul>
     </li>
-    <li class="list-group-item" style="border: none"><i class="fa fa-bell-o" aria-hidden="true"></i><sup>{{alertcount}}</sup></li>
-    <li class="list-group-item" style="border: none"></li><img src="">
+    <li class="list-group-item" style="border: none"><i class="fa fa-bell-o fa-2x" aria-hidden="true"></i><sup>{{alertcount}}</sup></li>
+    <li class="list-group-item" style="border: none"></li><img src="./images/john-deere-logo.jpg">
   </ul>
+      </div>
     </div>
   </div>
   <span class="greenline"></span>
   <span class="yellowline"></span>
   <div class="row">
-    <div class="">  
-      <div class="" style="width:70px">
-         <a href="#" ><i class="fa fa-home"></i></a> 
+    <div class="col sidebar">  
+      <div class="sdidebar">
+        <ul class="list-sidebar">
+         <li> <a href="#"><i class="fa fa-bars fa-2x list-sidebar-item"></i></a></li>
+         <li> <a href="#"><i class="fa  fa-home fa-2x list-sidebar-item"></i></a></li>
+         <li> <a href="#"><i class="fa fa-cog fa-2x list-sidebar-item"></i></a></li>
+        </ul>
       </div>
     </div>
-    <div class="">
-    <ul class="nav nav-tabs">
-    <li class="nav-item dropdown" *ngFor="let item of menu">
-      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">{{item.name}}</a>
-      <div class="dropdown-menu">
-        <a class="dropdown-item "  href="#">Link 1</a>
-        <a class="dropdown-item" href="#">Link 2</a>
-        <a class="dropdown-item" href="#">Link 3</a></div>
-    </li>
-  </ul>
-    </div>
+    <div class="col-11">
+      <div class="row">  
+          <ul class="nav">
+          <li class="nav-item dropdown" *ngFor="let item of menu">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">{{item.name}}</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item "  href="#">Link 1</a>
+              <a class="dropdown-item" href="#">Link 2</a>
+              <a class="dropdown-item" href="#">Link 3</a></div>
+          </li>
+        </ul>
+      </div>
+        <div class="row main-search">
+        <div class="main">
+        <div class="form-group has-search">
+          <span class="fa fa-search form-control-feedback"></span>
+          <input type="text" class="form-control" placeholder='Search Data or Reports. Try "Forecast","AE"'>
+        </div>
+        </div>
+      </div>
   </div>
 </div>
